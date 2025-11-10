@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
@@ -10,21 +9,16 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-[100] w-full bg-white shadow-sm">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <Image
+          <Link href="/" className="flex items-center">
+            <img
               src="/assets/Zusi new logo no backgrd.svg"
               alt="ZUSI Logo"
-              width={40}
-              height={40}
-              className="w-8 h-8 md:w-10 md:h-10"
-              priority
-              quality={90}
+              width={120}
+              height={120}
+              className="w-24 h-24 md:w-28 md:h-28"
             />
-            <span className="text-2xl md:text-3xl font-bold text-accent-green">
-              ZUSI
-            </span>
           </Link>
 
           {/* Desktop Navigation */}

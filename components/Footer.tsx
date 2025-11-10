@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,16 +7,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Column */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <Image
-                src="/assets/Zusi new logo no backgrd.svg"
-                alt="ZUSI Logo"
-                width={32}
-                height={32}
-                className="w-8 h-8"
-                quality={90}
-              />
-              <span className="text-2xl font-bold text-accent-green">ZUSI</span>
+            <div className="flex items-center">
+              <div className="bg-white rounded-lg p-3 md:p-4 shadow-lg">
+                <img
+                  src="/assets/Zusi new logo no backgrd.svg"
+                  alt="ZUSI Logo"
+                  width={100}
+                  height={100}
+                  className="w-20 h-20 md:w-24 md:h-24"
+                />
+              </div>
             </div>
             <p className="text-gray-300 text-sm">
               All-in-one utility & shared payment platform. Pay bills. Split expenses. All Automated.

@@ -12,6 +12,8 @@ const nextConfig = {
     // Enable image optimization on Netlify
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    // Ensure images are optimized
+    unoptimized: false,
     // Remote patterns if needed in the future
     remotePatterns: [],
   },

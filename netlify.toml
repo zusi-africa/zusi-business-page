@@ -9,14 +9,8 @@
 [build.environment]
   NEXT_PRIVATE_STANDALONE = "true"
 
-# Redirect rules for 404 handling
-# SPA fallback - ensures all routes are handled by Next.js
-# This allows Next.js to handle client-side routing and show 404 page for non-existent routes
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
+# Note: @netlify/plugin-nextjs handles routing and 404s automatically
+# No redirect rules needed - the plugin handles everything including 404 pages
 
 # Headers for image caching
 [[headers]]
