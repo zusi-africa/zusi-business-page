@@ -86,7 +86,9 @@ export default function HeroCarousel() {
               fill
               className="object-cover"
               priority={index === 0}
-              quality={90}
+              quality={index === 0 ? 90 : 75}
+              sizes="100vw"
+              loading={index === 0 ? "eager" : "lazy"}
             />
             {/* Overlay Gradient - Reduced Opacity */}
             <div className={`absolute inset-0 bg-gradient-to-br ${slide.gradient}`} />

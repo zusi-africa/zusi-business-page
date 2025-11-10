@@ -19,6 +19,8 @@ export default function Header() {
               width={40}
               height={40}
               className="w-8 h-8 md:w-10 md:h-10"
+              priority
+              quality={90}
             />
             <span className="text-2xl md:text-3xl font-bold text-accent-green">
               ZUSI

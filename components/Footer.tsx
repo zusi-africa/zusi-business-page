@@ -15,6 +15,7 @@ export default function Footer() {
                 width={32}
                 height={32}
                 className="w-8 h-8"
+                quality={90}
               />
               <span className="text-2xl font-bold text-accent-green">ZUSI</span>
             </div>
