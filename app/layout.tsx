@@ -26,14 +26,14 @@ export const metadata: Metadata = {
   authors: [{ name: "ZUSI" }],
   creator: "ZUSI",
   publisher: "ZUSI",
-  metadataBase: new URL("https://www.zusiafrica.com"),
+  metadataBase: new URL("https://www.zusiafrica"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.zusiafrica.com",
+    url: "https://www.zusiafrica",
     siteName: "ZUSI",
     title: "ZUSI - All-in-one Utility & Shared Payment Platform for Africa",
     description: "Pay bills. Split expenses. All Automated. Simplify your bill payments with ZUSI - Africa's comprehensive utility payment platform.",
